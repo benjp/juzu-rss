@@ -1,5 +1,3 @@
-@org.juzu.Application
-
 @Assets(
         scripts = {
                 @Script(src = "js/jquery-1.7.1.min.js")
@@ -8,8 +6,12 @@
                 @Stylesheet(src = "css/simple-rss.css")
         }
 )
-package org.gatein.portal.rss;
 
-import org.juzu.plugin.asset.Assets;
-import org.juzu.plugin.asset.Script;
-import org.juzu.plugin.asset.Stylesheet;
+@Application
+@Portlet package org.gatein.portal.rss;
+
+import juzu.Application;
+import juzu.plugin.asset.Assets;
+import juzu.plugin.asset.Script;
+import juzu.plugin.asset.Stylesheet;
+import juzu.plugin.portlet.Portlet;

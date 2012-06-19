@@ -1,11 +1,11 @@
 package org.gatein.portal.rss;
 
+import juzu.Path;
+import juzu.Resource;
+import juzu.View;
+import juzu.template.Template;
 import org.gatein.portal.rss.model.Feed;
 import org.gatein.portal.rss.model.Item;
-import org.juzu.Path;
-import org.juzu.Resource;
-import org.juzu.View;
-import org.juzu.template.Template;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -41,11 +41,6 @@ public class Controller
 
   @Inject
   PortletPreferences portletPreferences;
-
-  @Inject
-  public Controller()
-  {
-  }
 
   @View
   public void index() throws IOException
